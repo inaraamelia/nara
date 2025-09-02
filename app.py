@@ -34,18 +34,18 @@ import streamlit as st
 import matplotlib.pyplot as plt
 
 # Title
-st.title("🍕 Pie Chart Example in Streamlit")
+st.title("📚 Pie Chart Example in Streamlit")
 
 # Sample data (you can replace with your own)
-labels = ['Apples', 'Bananas', 'Cherries', 'Dates']
+labels = ['Maths', 'English', 'Science', 'Malay']
 sizes = [25, 30, 20, 25]
 
 # User can adjust values
 st.subheader("Adjust Fruit Proportions")
-sizes[0] = st.slider("Apples", 0, 100, sizes[0])
-sizes[1] = st.slider("Bananas", 0, 100, sizes[1])
-sizes[2] = st.slider("Cherries", 0, 100, sizes[2])
-sizes[3] = st.slider("Dates", 0, 100, sizes[3])
+sizes[0] = st.slider("Maths", 0, 100, sizes[0])
+sizes[1] = st.slider("English", 0, 100, sizes[1])
+sizes[2] = st.slider("Science", 0, 100, sizes[2])
+sizes[3] = st.slider("Malay", 0, 100, sizes[3])
 
 # Normalize sizes so they sum to 100
 total = sum(sizes)
